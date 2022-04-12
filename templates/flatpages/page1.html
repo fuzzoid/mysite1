@@ -1,0 +1,18 @@
+{% extends 'flatpages/default.html' %}
+
+{% block extra_css %}
+{% load static %}
+    <link href="{% static 'css/page1.css' %}" rel="stylesheet" />
+{% endblock extra_css %}
+
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+
+{% block content %}
+    <p>page1</p>
+    <h2>{{ flatpage.title }}</h2>
+
+
+{{ flatpage.content }}
+{% endblock content %}
